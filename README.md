@@ -33,7 +33,7 @@ To test the statistical significance of this difference, I used the Mann-Whitney
 
 Additionally, I performed a linear regression to see if ridership can be predicted using the features rain, precipitation, hour, mean temperature. The residual distribution plotted below appears roughly normal, so it appears the model is explaining the data well.
 
-[![Residuals](./Insight Catalyst _ Data science aspirations_files/residuals.png)](https://insightcatalyst.wordpress.com/2014/08/residuals.png)
+<img src=residuals.png>
 
 In this case, R-squared = 0.31, however we have not established that the trend is statistically significant.
 
