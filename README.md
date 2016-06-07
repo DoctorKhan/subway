@@ -21,8 +21,8 @@ Do passengers use the New York City subway more on rainy days? Additional passen
 
 First let’s make a histogram of hourly turnstile entries on rainy days and non-rainy days to see if there is an apparent difference.
 
-[![RainHist](./Insight Catalyst _ Data science aspirations_files/rainhist1.png)](https://insightcatalyst.wordpress.com/2014/08/rainhist1.png)
 <img src=rainhist1.png>
+
 The histogram above (logarithmic y-scale) shows a consistently greater ridership on rainy days than non-rainy days, but this is a qualitative statement.
 
 To compute the mean hourly turnstile entries for rainy vs. non-rainy days, I wrote a mapreduce in python. There were two keys: rainy and non-rainy. The corresponding values were the houlry turnstile entries. For a larger dataset, in a cluster with nodes greater than two, it would make sense to assign more keys, possibly one for every hour of the day. This would allow batch processing of 24 datasets at a time vs. two.
